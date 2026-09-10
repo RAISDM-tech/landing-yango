@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111111;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00; // Le jaune signature style Yango
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ffcc00;
+      }
+    }
+
+    .btn-download {
+      background-color: #ffcc00;
+      color: #111111;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #e6b800;
+        color: #111111;
+      }
+    }
+  }
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #111111 0%, #222222 100%);
+  color: #ffffff;
+
+  .hero-content {
+    max-width: 700px;
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+
+      // On met un petit coup de jaune Yango sur un mot clé si on veut, ou on garde tout blanc propre
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+      .btn-primary {
+        background-color: #ffcc00;
+        color: #111111;
+        padding: 0.8rem 1.5rem;
+        border-radius: 6px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: #e6b800;
+        }
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        padding: 0.8rem 1.5rem;
+        border-radius: 6px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #ffffff;
+          color: #111111;
+        }
+      }
+    }
+  }
+}
+.features {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+
+  h2 {
+    font-size: 2.3rem;
+    color: #111111;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 3rem;
+  }
+
+  .cards-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap; // Permet de passer les cartes en dessous sur les petits écrans
+
+    .card {
+      background: #f9f9f9;
+      border: 1px solid #eaeaea;
+      padding: 2.5rem 2rem;
+      border-radius: 8px;
+      width: 300px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      }
+
+      .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        color: #111111;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        color: #555555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+.testimonials {
+  padding: 5rem 2rem;
+  background-color: #f4f6f8;
+  text-align: center;
+
+  h2 {
+    font-size: 2.3rem;
+    color: #111111;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 3rem;
+  }
+
+  .testimonial-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .testimonial-card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 350px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .comment {
+        font-style: italic;
+        color: #444444;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .avatar {
+          font-size: 2rem;
+          background: #ffcc00;
+          padding: 0.5rem;
+          border-radius: 50%;
+        }
+
+        h4 {
+          margin: 0;
+          color: #111111;
+          font-size: 1rem;
+        }
+
+        span {
+          font-size: 0.85rem;
+          color: #777777;
+        }
+      }
+    }
+  }
+}
+.contact-section {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+
+  .contact-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+
+    h2 {
+      font-size: 2.3rem;
+      color: #111111;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: #666666;
+      margin-bottom: 2.5rem;
+    }
+
+    .yango-form {
+      background: #f9f9f9;
+      padding: 2.5rem;
+      border-radius: 12px;
+      border: 1px solid #eaeaea;
+      text-align: left;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+
+      .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+          display: block;
+          font-weight: 600;
+          color: #333333;
+          margin-bottom: 0.5rem;
+          font-size: 0.95rem;
+        }
+
+        input, select {
+          width: 100%;
+          padding: 0.8rem;
+          border: 1px solid #cccccc;
+          border-radius: 6px;
+          font-size: 1rem;
+          background-color: #ffffff;
+          box-sizing: border-box; // Pour éviter que les inputs dépassent
+
+          &:focus {
+            outline: none;
+            border-color: #ffcc00;
+            box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.2);
+          }
+        }
+      }
+
+      .btn-submit {
+        width: 100%;
+        background-color: #ffcc00;
+        color: #111111;
+        padding: 0.9rem;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: #e6b800;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #111111;
+  color: #888888;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
